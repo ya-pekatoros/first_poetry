@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "first-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Yaroslav Pekatoros <y.pekatoros@gmail.com>"]
+readme = "README.md"
+packages = [{include = "first_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+say-hello = "first_poetry.scripts.say_hello:main"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.6.0"
+colorama = "^0.4.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
